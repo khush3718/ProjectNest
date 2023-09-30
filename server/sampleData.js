@@ -1,27 +1,27 @@
 const projects = [
     {
-        id: 1,
+        id: '1',
         clientId: 1,
         name: "Website Redesign",
         description: "Redesign the company website to improve user experience.",
         status: "In Progress"
     },
     {
-        id: 2,
+        id: '2',
         clientId: 2,
         name: "Mobile App Development",
         description: "Develop a mobile app for both iOS and Android platforms.",
         status: "Completed"
     },
     {
-        id: 3,
+        id: '3',
         clientId: 3,
         name: "Marketing Campaign",
         description: "Plan and execute a digital marketing campaign for product launch.",
         status: "On Hold"
     },
     {
-        id: 4,
+        id: '4',
         clientId: 4,
         name: "Product Testing",
         description: "Conduct thorough testing of the new product for quality assurance.",
