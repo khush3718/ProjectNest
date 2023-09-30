@@ -1,5 +1,7 @@
 const express = require('express');
 require('dotenv').config();
+const colors = require('colors');
+const connectDB = require('./config/db');
 const {graphqlHTTP} = require('express-graphql');
 const schema = require('./Schema/schema');
 
@@ -16,4 +18,7 @@ app.use('/graphql', graphqlHTTP({
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// connect to database
+connectDB();
 
