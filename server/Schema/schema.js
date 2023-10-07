@@ -104,8 +104,8 @@ const {
         },
         resolve(parent, args) {
           Project.find({ clientId: args.id }).then((projects) => {
-            projects.forEach((project) => {
-              project.deleteOne();
+            projects.forEach(project => {
+              project.remove()  // remove all the projects that belong to the client;
             });
           });
   
@@ -122,8 +122,8 @@ const {
             type: new GraphQLEnumType({
               name: 'ProjectStatus',
               values: {
-                new: { value: 'Not started' },
-                progress: { value: 'In progress' },
+                new: { value: 'Not Started' },
+                progress: { value: 'In Progress' },
                 completed: { value: 'Completed' },
               },
             }),
@@ -163,8 +163,8 @@ const {
             type: new GraphQLEnumType({
               name: 'ProjectStatusUpdate',
               values: {
-                new: { value: 'Not started' },
-                progress: { value: 'In progress' },
+                new: { value: 'Not Started' },
+                progress: { value: 'In Progress' },
                 completed: { value: 'Completed' },
               },
             }),
