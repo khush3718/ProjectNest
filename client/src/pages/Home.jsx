@@ -10,8 +10,14 @@ export default function Home() {
                 <AddClientModal />
                 <AddProjectModal />
             </div>
+            <div className="d-flex justify-content-between align-items-center">
+                <h1>Projects</h1>
+            </div>
             <Projects />
             <hr />
+            <div className="d-flex justify-content-between align-items-center">
+                <h1>Client Info</h1>
+            </div>
             <Clients />
         </>
     )
